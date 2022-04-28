@@ -1,0 +1,35 @@
+$very_dark_gray: hsl(0, 0%, 17%);
+$dark_gray: hsl(0, 0%, 59%);
+
+.search__bar {
+   display: flex;
+   margin-top: 20px;
+   width: 500px;
+   &__input {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      width: 100%;
+      padding: 13px 20px;
+      appearance: none;
+      border: none;
+      outline: none;
+      background-color: white;
+   }
+   &__input::placeholder {
+      color: $dark_gray;
+   }
+   &__submit {
+      cursor: pointer;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      appearance: none;
+      border: none;
+      outline: none;
+      background-color: black;
+      height: 100%;
+      width: 35px;
+      background-image: url('../../imgs/icon-arrow.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+}
